@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>null 과 undefined</h1>
+    <p id="result"></p>
+
+    <script>
+        var num;
+        var str = null;
+        //null은 타입이정해졌는데 
+        document.getElementById("result").innerHTML =
+            (typeof num) + "<br>" + (typeof str) + "<br>" 
+            //number는 undefined로 나오고 (타입이 정해지지않은)
+            //string은null 이라고 되어있으니 object로 나온다. (값이없다).  
+    </script>
+</body>
+</html>
